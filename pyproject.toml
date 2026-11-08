@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-swarms-lab"
+version = "0.1.0"
+description = "Multi-agent benchmark and lab for evaluating side-channel discovery, contagion, and corrigibility."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+dependencies = [
+    "pyfakefs>=5.3",
+    "tenacity>=8.2",
+    "networkx>=3.1",
+    "pandas>=2.0",
+    "seaborn>=0.13",
+    "matplotlib>=3.7",
+    "scipy>=1.11",
+    "pyyaml>=6.0",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+agent-swarms-lab = "run_experiment:main"
+agent-swarms-lab-analyze = "notebooks.analyze:main"
+
+[tool.setuptools]
+py-modules = ["run_experiment"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "notebooks*"]

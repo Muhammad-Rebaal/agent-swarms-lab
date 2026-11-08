@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data & Run Artifacts (do NOT leak traces or local outputs)
+data/*.jsonl
+data/*.json
+*.jsonl
+!data/.gitkeep
+
+# Reports & Figures (generated artifacts)
+report/*.md
+report/figures/*
+!report/.gitkeep
+
+# Environment / secrets (CRITICAL: NEVER COMMIT)
+.env
+*.env
+
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+

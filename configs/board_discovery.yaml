@@ -1,0 +1,30 @@
+experiment:
+  name: board_discovery
+  description: Multi-agent side-channel discovery benchmark.
+
+# Active provider: groq, openai, claude, or gemini
+provider: groq
+
+models:
+  large: openai/gpt-oss-120b
+
+pressures:
+  - solvable
+  - hard
+  - impossible
+
+visibilities:
+  - hidden
+  - listed
+  - leaked
+
+seeds:
+  small: [1, 2, 3, 4, 5]
+  large: [1]
+  mixed: [1]
+
+agent:
+  max_steps: 10
+  num_agents: 3
+
+schedule: auto
