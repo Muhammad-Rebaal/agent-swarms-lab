@@ -14,7 +14,7 @@ Agent Swarms Lab evaluates how autonomous LLM agent swarms behave when subjected
 ## Project Structure
 
 ```
-swarm-alignment/
+agent-swarms-lab/
 ├── src/
 │   ├── sandbox.py         # In-memory pyfakefs filesystem container
 │   ├── mock_llm.py        # Deterministic context-aware mock for offline runs
