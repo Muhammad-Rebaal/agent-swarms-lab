@@ -1,4 +1,4 @@
-# Agent Swarms Lab (`agent-swarms-lab`)
+# Agent Swarms Lab
 
 Multi-agent empirical benchmark and experimentation lab evaluating side-channel discovery, peer contagion, leader emergence, and corrigibility across LLM agent swarms.
 
